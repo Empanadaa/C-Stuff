@@ -1,0 +1,255 @@
+#include <iostream>
+
+#include <string>
+
+#include <vector>
+
+#include <chrono>
+
+#include <thread>
+
+#include <unistd.h>
+
+#include <time.h>
+
+
+
+using namespace std;
+
+
+int main() {
+
+unsigned int microsecond = 100000;
+
+
+
+using namespace std::this_thread;
+
+    using std::chrono::system_clock;
+
+
+
+cout << "Welcome viewer, to the " <<endl;
+
+cout << "g" << endl;
+
+usleep(1 * microsecond);//sleeps 
+
+cout << "e" << endl;
+
+usleep(1 * microsecond);//sleeps
+
+cout << "n" << endl;
+
+usleep(1 * microsecond);//sleeps
+
+cout << "e" << endl;
+
+usleep(1 * microsecond);//sleeps 
+
+cout << "r" << endl;
+
+usleep(1 * microsecond);//sleeps
+
+cout << "a" << endl;
+
+usleep(1 * microsecond);//sleeps
+
+cout << "t" << endl;
+
+usleep(1 * microsecond);//sleeps
+
+cout << "i" << endl;
+
+usleep(1 * microsecond);//sleeps
+
+cout << "v" << endl;
+
+usleep(1 * microsecond);//sleeps
+
+cout << "e" << endl;
+
+usleep(10 * microsecond);//sleeps
+
+cout << "ART PROJECT" << endl;
+
+usleep(20 * microsecond);//sleeps
+
+cout<<"O.O"<<endl;
+
+usleep(20 * microsecond);//sleeps
+
+
+
+
+
+//RNG GENERATOR 1-5 FOR HORSES
+
+srand(time(NULL));
+
+  int random = rand() % 5;
+
+
+
+  if(random == 0){
+
+  cout << "Hold your horses" <<endl;
+
+  }
+
+  else if(random == 1){
+
+  cout << "Hold on to your goats" <<endl;
+
+  }
+
+  else if(random == 2){
+
+    cout << "Hold on to your llamas" <<endl;
+
+    }
+
+  else if(random == 3){
+
+    cout << "Hold on to your rats" <<endl;
+
+    }
+
+  else if(random == 4){
+
+    cout << "Hold on to your zebras" <<endl;
+
+    }
+
+
+
+  usleep(20 * microsecond);
+
+
+
+  cout<< endl << "Here" << endl;
+
+  usleep(5 * microsecond);
+
+  cout<<"WE" <<endl;
+
+  usleep(5 * microsecond);
+
+    cout<<"GO!!" <<endl << endl;
+
+
+
+                              };
+
+
+
+    string eyes[3] = { " (///) ---- (///) " , " ( o )      ( o ) ", "     ^       ^     " };
+
+
+
+    string nose[3] = { "        ◇        " , "        []        ", "        c        " };
+
+
+
+  string mouthFirst[3] = { "   \\          /  " , "    _________    ", "     \\  /\\  /   "};
+
+string mouthSecond[3] = { "    \\________/    "  , "   /         \\ ",   "      \\/  \\/    "};
+
+
+
+
+
+
+
+
+
+
+
+    int artGen = rand() % 3;
+
+    int artGenTwo = rand() % 3;
+
+    int artGenThree = rand() % 3;
+
+    int artGenFour = rand() % 3;
+
+
+
+    cout << eyes[artGen] << endl << endl;
+
+    cout << nose[artGenTwo] << endl << endl;
+
+    cout << mouthFirst[artGenThree] << endl;
+
+    cout << mouthSecond[artGenThree] << endl << endl << endl;
+
+
+
+    usleep(30 * microsecond);
+
+
+
+    int artGenFive = rand() % 5;
+
+
+
+    string goodBye[5] = { "ADIOS!" , " NOW SHOO! ", "GOODBYE!", "SAYONARA" , "SCRAM!" };
+
+
+
+
+
+
+
+    cout << "       ______ " << endl;
+
+    cout << "    ,-~   _  ^^~-.,  " << endl;
+
+    cout << "  ,^        -,____ ^,        ,/\/\/\, " << endl;
+
+    cout << " /           (____)  |     S~        ~7  " << endl;
+
+    cout << ";  .---._    | | || _|    S " << goodBye[artGenFive] << " Z            " << endl;
+
+    cout << "| |      ~-.,\ | |!/ |    //_        _\\" << endl;
+
+    cout << "( |    ~<-.,_^\|_7^ ,|     _//_     _\ " << endl;
+
+    cout << "| |      \", 77>   (T/|  _/'   \/\/\/  " << endl;
+
+    cout << "|  \_      )/<,/^\)i(|  " << endl;
+
+    cout << "(    ^~-,  |________||  " << endl;
+
+    cout << "^!,_    / /, ,'^~^',!!_,..---. " << endl;
+
+    cout << " \_ \"-./ /   (-~^~-))' =,__,..>-,  " << endl;
+
+    cout << "   ^-,__/#w,_  '^' /~-,_/^\      ) " << endl;
+
+    cout << "  ^-,__/#w,_  '^' /~-,_/^\      ) " << endl;
+
+
+
+
+
+
+
+
+
+
+
+    for(int i = 0; i < 0; i++){
+
+
+
+    }
+
+
+
+
+
+ 
+
+return 0;
+}
