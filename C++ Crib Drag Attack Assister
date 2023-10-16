@@ -1,0 +1,246 @@
+//============================================================================
+// Name        : NCS.cpp
+// Author      :
+// Version     :
+// Copyright   : 
+// Description : Crib drag attack assistance program
+//============================================================================
+
+#include <iostream>
+#include <string>
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <cassert>
+#include <cstdio>
+#include <list>
+#include <vector>
+#include <sstream>
+#include <iterator>
+#include <cassert>
+#include <regex>
+#include <algorithm>
+#include <cctype>
+#include <functional>
+
+using namespace std;
+using std::cout; using std::endl;
+using std::string; using std::hex;
+using std::stringstream;
+
+static inline unsigned int value(char c)
+{
+    if (c >= '0' && c <= '9') { return c - '0';      }
+    if (c >= 'a' && c <= 'f') { return c - 'a' + 10; }
+    if (c >= 'A' && c <= 'F') { return c - 'A' + 10; }
+    return -1;
+}
+
+std::string str_xor(std::string const & s1, std::string const & s2)
+{
+    assert(s1.length() == s2.length());
+
+    static char const alphabet[] = "0123456789abcdef";
+
+    std::string result;
+    result.reserve(s1.length());
+
+    for (std::size_t i = 0; i != s1.length(); ++i)
+    {
+        unsigned int v = value(s1[i]) ^ value(s2[i]);
+
+        assert(v < sizeof alphabet);
+
+        result.push_back(alphabet[v]);
+    }
+
+    return result;
+}
+
+
+
+
+
+
+string hexToASCII(string hex)
+{
+    // initialize the ASCII code string as empty.
+    string ascii = "";
+    for (size_t i = 0; i < hex.length(); i += 2)
+    {
+        // extract two characters from hex string
+        string part = hex.substr(i, 2);
+
+        // change it into base 16 and
+        // typecast as the character
+        char ch = stoul(part, nullptr, 16);
+
+        // add this char to final ASCII string
+        ascii += ch;
+    }
+    return ascii;
+}
+
+
+
+
+
+bool containsAnyLetter(string s9){
+
+int yes = 0;
+
+for(int i = 0; i < s9.length(); i++){
+
+
+}
+}
+
+
+
+
+
+
+
+
+int main() {
+cout << "Welcome to the Crib Drag attacker" << endl;
+
+string s1;
+string s2;
+string s3;
+
+//Asking user for two encrypted messages
+cout << "Give me two Xor encrypted messages and I  will crack them for you, no key necessary! \n\nEnter the first one below: " << endl;
+cin >> s1;
+//cout << "You entered: " << s1 << endl <<endl;
+cout << "Now give me one more message: " <<endl;
+cin>>s2;
+   // cout<<"You entered: " << s2 << endl <<endl;
+
+label:
+    //Asking user to guess a word
+    cout<<"Guess a word from the messages: " << endl;
+    cin>>s3;
+    cout<<"You entered: " << s3 << endl << "Now converting to hex." <<endl << endl;
+
+
+    //Converting to hex
+       string s5;
+       stringstream ss;
+
+       cout << "string: " << s3 << endl;
+
+       for (const auto &item : s3) {
+           ss << hex << int(item);
+       }
+       s5 = ss.str();
+       cout << "hexval: " << s5 << endl << endl;
+      //Telling user the given phrase was too long
+
+
+
+    //XOR'ing the users encrypted messages
+
+    cout<<"XOR'ing the ciphered messages" << endl << endl;
+
+    string outcome = str_xor(s1, s2);
+
+    cout<< "Result: " << outcome << endl <<endl;
+
+    if(s5.length() > outcome.length()){
+                    cout<< endl << "The phrase you entered is too long to be the encrypted phrase. Try again." <<endl <<endl;
+                    goto label;
+                   }
+
+    int length = s5.length();
+
+    string checker = outcome.substr(0, length);
+    cout<<"XOR'ing " << checker << " with hex'd guessed word" << endl<<endl;
+
+
+
+    string zorOutcome = str_xor(s5, checker);
+    cout<<"The result is " << zorOutcome << endl<<endl;
+
+    cout<<"The ASCII outcome: " << endl << hexToASCII(zorOutcome) <<endl<< endl;
+    string hexZorOutcome = hexToASCII(zorOutcome);
+
+    if(checker == outcome){
+        cout<< "You got the phrase!" << endl;
+        return 0;
+        }
+
+  //  if(hexToASCII(zorOutcome)
+
+
+   // bool containsNonAlphabet = find_if(hexZorOutcome.begin(), hexZorOutcome.end(),not1(ptr_fun((int(*)(int))isalpha))) != hexZorOutcome.end();
+
+int exit = 0;
+
+    for(int i = 0; i < outcome.length() ; i++){
+    // cout<<"working"<<endl;
+    checker = outcome.substr(length * i, length);
+    // cout<< checker <<endl;
+    if(checker.length() == 0){
+    cout<< endl<< "The word has not been found. Try a different word."  <<endl;
+    goto label;
+    }
+    if(s5.length() != checker.length()){
+
+
+        checker = outcome.substr(outcome.length() - s5.length(), outcome.length());
+        exit = 1;
+        }
+    cout<<"Now checking: " << s5 << " against " << checker <<endl;
+
+
+
+
+    if(checker == outcome.substr(outcome.size() - checker.size(), outcome.size() - 1)){
+    cout<<"(This is the end of the two phrases. If this looks like a part of the phrase, don't add anything after, only before.)" << endl;
+    }
+
+
+string zorOutcome = str_xor(s5, checker);
+//cout<<"The hex outcome these two is " << zorOutcome << endl;
+
+string hexZorOutcome = hexToASCII(zorOutcome);
+cout<<"The ASCII outcome: " << endl << hexZorOutcome <<endl<< endl;
+
+
+cout<<"Does any of this look like a part of a phrase so far? y/n" <<endl;
+char answer;
+cin>>answer;
+
+
+if(answer == 'y'){
+goto label;
+}
+
+if(exit == 1){
+cout<<endl<<"The word has not been found. Try a different word." << endl;
+goto label;
+}
+
+    /* string zorOutcome = str_xor(s5, checker);
+       cout<<"The result is " << zorOutcome << endl<<endl;
+
+
+       cout<<"Now encoding into ASCII: " << endl << hexToASCII(zorOutcome) <<endl<< endl;
+       string hexZorOutcome = hexToASCII(zorOutcome);
+       bool containsNonAlphabet = find_if(hexZorOutcome.begin(), hexZorOutcome.end(),not1(ptr_fun((int(*)(int))isalpha))) != hexZorOutcome.end();
+       if(containsNonAlphabet == false){
+        break;  */
+       }
+
+
+
+
+
+    //cout<< endl << "The word you entered was not found, please enter another word " <<endl <<endl;
+    cout<<"The word has not been found. Try a different word." << endl <<endl;
+    goto label;
+
+
+return 0;
+}
