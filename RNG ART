@@ -138,7 +138,6 @@ srand(time(NULL));
     cout<<"GO!!" <<endl << endl;
 
 
-
                               };
 
 
@@ -154,11 +153,6 @@ srand(time(NULL));
   string mouthFirst[3] = { "   \\          /  " , "    _________    ", "     \\  /\\  /   "};
 
 string mouthSecond[3] = { "    \\________/    "  , "   /         \\ ",   "      \\/  \\/    "};
-
-
-
-
-
 
 
 
@@ -199,8 +193,6 @@ string mouthSecond[3] = { "    \\________/    "  , "   /         \\ ",   "      
 
 
 
-
-
     cout << "       ______ " << endl;
 
     cout << "    ,-~   _  ^^~-.,  " << endl;
@@ -228,14 +220,6 @@ string mouthSecond[3] = { "    \\________/    "  , "   /         \\ ",   "      
     cout << "   ^-,__/#w,_  '^' /~-,_/^\      ) " << endl;
 
     cout << "  ^-,__/#w,_  '^' /~-,_/^\      ) " << endl;
-
-
-
-
-
-
-
-
 
 
 
