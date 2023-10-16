@@ -114,11 +114,11 @@ cout<< " / ___/__ ___ _  ___   / __ \\_  _____ ____" << endl;
 
         cout<< "/ (_ / _ `/  ' \\/ -_) / /_/ / |/ / -_) __/"<< endl;
 
-        cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ "<< endl;
+        cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ \n"<< endl;
 
 
-
-        return 0;
+        usleep(40 * microsecond);
+        goto label;
 
 
 
@@ -210,11 +210,12 @@ cout<< " / ___/__ ___ _  ___   / __ \\_  _____ ____" << endl;
 
 cout<< "/ (_ / _ `/  ' \\/ -_) / /_/ / |/ / -_) __/"<< endl;
 
-cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ "<< endl;
+cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ \n"<< endl;
 
 
 
-return 0;
+        usleep(40 * microsecond);
+        goto label;
 
 
 
@@ -244,11 +245,12 @@ cout<< " / ___/__ ___ _  ___   / __ \\_  _____ ____" << endl;
 
     cout<< "/ (_ / _ `/  ' \\/ -_) / /_/ / |/ / -_) __/"<< endl;
 
-    cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ "<< endl;
+    cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ \n "<< endl;
 
 
 
-    return 0;
+    usleep(40 * microsecond);
+        goto label;
 
 
 
@@ -270,11 +272,12 @@ cout<< " / ___/__ ___ _  ___   / __ \\_  _____ ____" << endl;
 
 cout<< "/ (_ / _ `/  ' \\/ -_) / /_/ / |/ / -_) __/"<< endl;
 
-cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ "<< endl;
+cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ \n"<< endl;
 
 
 
-return 0;
+        usleep(40 * microsecond);
+        goto label;
 
 
 
@@ -332,9 +335,10 @@ cout<< " / ___/__ ___ _  ___   / __ \\_  _____ ____" << endl;
 
 cout<< "/ (_ / _ `/  ' \\/ -_) / /_/ / |/ / -_) __/"<< endl;
 
-    cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ "<< endl;
+    cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ \n "<< endl;
 
-
+        usleep(40 * microsecond);
+        goto label;
 
 }
 
@@ -604,7 +608,7 @@ cout<<"You realize you feel light headed and hungry." <<endl<<endl;
 
 usleep(10 * microsecond);
 
-cout<<"You have a food packet, but believe it can be contaminated. The only way to prepare it is on the ship's engine which may contaminate the food even more." << endl;
+cout<<"You have a food packet, but believe it can be contaminated. The only way to prepare it is on the ship's slowly cooling engine which is releasing radiation and may contaminate the food even more." << endl;
 
 usleep(10 * microsecond);
 
@@ -688,9 +692,10 @@ cout<<".\n\n";
 
         cout<< "/ (_ / _ `/  ' \\/ -_) / /_/ / |/ / -_) __/"<< endl;
 
-    cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ "<< endl;
+    cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ \n"<< endl;
 
-
+        usleep(40 * microsecond);
+        goto label;
 
     }
 
@@ -730,9 +735,10 @@ cout<<".\n\n";
 
     cout<< "/ (_ / _ `/  ' \\/ -_) / /_/ / |/ / -_) __/"<< endl;
 
-    cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ "<< endl;
+    cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ \n"<< endl;
 
-
+        usleep(40 * microsecond);
+        goto label;
 
     }
 
@@ -756,7 +762,7 @@ usleep(10 * microsecond);
 
 cout<< "You slowly traverse through the woods." << endl << endl;
 
-usleep(40 * microsecond);
+usleep(60 * microsecond);
 
 
 
@@ -772,9 +778,9 @@ cin>>choice;
 
 if(choice ==2){
 
-cout<<"You decide to sneak up on the deer." << endl;
+cout<<"You take out a small pointy, and jagged piece of metal you took from the ship earlier, and decide to sneak up on the deer." << endl;
 
-usleep(20 * microsecond);
+usleep(40 * microsecond);
 
 cout<<"step" <<endl;
 
@@ -800,7 +806,7 @@ cout<<"Before you can even think, it is charging at you." <<endl;
 
 usleep(10 * microsecond);
 
-cout<<"The giant black floating goo that came from its antler mimics the piece of metal you are holding and solidifies. " << endl;
+cout<<"The giant black floating goo that came from its antler mimics the piece of metal you are holding, then solidifies. " << endl;
 
 usleep(10 * microsecond);
 
@@ -816,9 +822,10 @@ cout<< " / ___/__ ___ _  ___   / __ \\_  _____ ____" << endl;
 
 cout<< "/ (_ / _ `/  ' \\/ -_) / /_/ / |/ / -_) __/"<< endl;
 
-cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ "<< endl;
+cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ \n"<< endl;
 
-
+        usleep(40 * microsecond);
+        goto label;
 
 }
 
@@ -852,11 +859,11 @@ usleep(10 * microsecond);
 
 cout<<"You start the fire successfully and begin cooking, but upon looking down you've realized the mistake you made."<<endl;
 
-usleep(30 * microsecond);
+usleep(40 * microsecond);
 
 cout<<"A gasoline trail leading back to the ship that has now caught fire."<<endl <<endl;
 
-usleep(20 * microsecond);
+usleep(40 * microsecond);
 
 cout<<"KABOOM!" << endl << endl;
 
@@ -866,9 +873,10 @@ cout<< " / ___/__ ___ _  ___   / __ \\_  _____ ____" << endl;
 
 cout<< "/ (_ / _ `/  ' \\/ -_) / /_/ / |/ / -_) __/"<< endl;
 
-cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ "<< endl;
+cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ \n "<< endl;
 
-
+        usleep(40 * microsecond);
+        goto label;
 
 }
 
@@ -894,17 +902,17 @@ usleep(30 * microsecond);
 
 
 
-cout<<"You look to your right and see container full of the drained deer's blood." << endl;
+cout<<"You look to your right and see a container full of the drained deer's blood." << endl;
 
 usleep(30 * microsecond);
 
 
 
-cout<< "Ngl.. that deer blood lookin like some bomb ass grape juice rn \U0001F633 \U0001F633 \U0001F633" <<endl;
+cout<< "Nah, but for real.. that deer blood lookin like some bomb grape juice rn \U0001F633 \U0001F633 \U0001F633" <<endl;
 
 usleep(30 * microsecond);
 
-cout<<"... What you finna do?" <<endl;
+cout<<"... What you gonna do?" <<endl;
 
 cout<<"[1] Sip dat deer blood   [2]Look for water" << endl;
 
@@ -990,7 +998,7 @@ cout<<" \\  // __ \\ / / / /   | | /| / // // __ \\"<<endl;
 
 cout<<" / // /_/ // /_/ /    | |/ |/ // // / / /"<<endl;
 
-cout<<"/_/ \\____/ \\__,_/     |__/|__//_//_/ /_/" <<endl;
+cout<<"/_/ \\____/ \\__,_/     |__/|__//_//_/ /_/ \n\n Secret Ending Unlocked" <<endl;
 
 
 
@@ -1010,8 +1018,10 @@ cout<< " / ___/__ ___ _  ___   / __ \\_  _____ ____" << endl;
 
     cout<< "/ (_ / _ `/  ' \\/ -_) / /_/ / |/ / -_) __/"<< endl;
 
-    cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ "<< endl;
+    cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ \n "<< endl;
 
+        usleep(40 * microsecond);
+        goto label;
 
 
 }
@@ -1035,4 +1045,3 @@ cout<< " / ___/__ ___ _  ___   / __ \\_  _____ ____" << endl;
 return 0;
 
 }
-
