@@ -40,7 +40,7 @@ using namespace std::this_thread;
 
 
 
-cout << "Hello, welcome to \"Scaling New Heights\""  << endl;
+cout << "Hello, welcome to \"Stranded\""  << endl;
 
 usleep(30 * microsecond);
 
@@ -602,7 +602,7 @@ else if(choice == 1){
 
 cout<< "You tie your shirt around the cut. It stops the bleeding. " << endl;
 
-usleep(10 * microsecond);
+usleep(40 * microsecond);
 
 cout<<"You realize you feel light headed and hungry." <<endl<<endl;
 
@@ -778,7 +778,7 @@ cin>>choice;
 
 if(choice ==2){
 
-cout<<"You take out a small pointy, and jagged piece of metal you took from the ship earlier, and decide to sneak up on the deer." << endl;
+cout<<"You take out the small pointy, and jagged piece of metal you took from the ship earlier, and decide to sneak up on the deer." << endl;
 
 usleep(40 * microsecond);
 
