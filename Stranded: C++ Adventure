@@ -1,0 +1,1038 @@
+#include <iostream>
+
+#include <string>
+
+#include <vector>
+
+#include <chrono>
+
+#include <thread>
+
+#include <unistd.h>
+
+#include <time.h>
+
+#include <stdlib.h>
+
+
+
+using namespace std;
+
+
+
+int main() {
+
+
+
+int health = 100;
+
+unsigned int microsecond = 100000;
+
+
+
+using namespace std::this_thread;
+
+    using std::chrono::system_clock;
+
+
+
+
+
+
+
+cout << "Hello, welcome to \"Scaling New Heights\""  << endl;
+
+usleep(30 * microsecond);
+
+cout<< "You will be playing as Mikey, an unfortanate interplanetary traveler who's luck has abandoned him. " << endl;
+
+usleep(50 * microsecond);
+
+cout<< "Knocked off his original route, his ship has crashed into a mysterious planet and now he is alone." <<endl <<endl;
+
+usleep(50 * microsecond);
+
+cout<< "You are alone." << endl << endl;
+
+usleep(40 * microsecond);
+
+cout<<"Your objective: " << endl;
+
+usleep(40 * microsecond);
+
+cout<< "Survive." << endl << endl;
+
+usleep(40 * microsecond);
+
+cout<<""<<flush;
+
+
+
+
+
+    int choice = 0;
+
+    label:
+
+
+
+cout<<"You stumble out of the ship, head spinning, confused as to where you are." << endl;
+
+usleep(20 * microsecond);
+
+cout<< "The incessant beeping of the ship's systems is giving you a headache." << endl;
+
+usleep(20 * microsecond);
+
+cout<< endl << "You decide to venture out into the world." << endl;
+
+usleep(10 * microsecond);
+
+cout<<"You immediately regret the decision as you see a giant crocodile looking reptile the size of a house." << endl;
+
+usleep(10 * microsecond);
+
+cout<<"What do you do?" << endl << endl;
+
+cout<<"[1] Attack it    [2] Run" <<endl << endl;
+
+cin>>choice;
+
+
+
+if(choice == 1){
+
+cout<<"You attack the crocodile with your bare fists. Did you really think this through?" << endl;
+
+usleep(10 * microsecond);
+
+cout<<"You are dragged underwater and spun like a helicopter blade until you become lake stew. You have died." << endl;
+
+
+
+cout<< " / ___/__ ___ _  ___   / __ \\_  _____ ____" << endl;
+
+        cout<< "/ (_ / _ `/  ' \\/ -_) / /_/ / |/ / -_) __/"<< endl;
+
+        cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ "<< endl;
+
+
+
+        return 0;
+
+
+
+}
+
+
+
+else if(choice == 2){
+
+cout<< "You flee from the creature. Blindly running into the nearby woods." << endl;
+
+usleep(10 * microsecond);
+
+cout<<"You snag your foot on a branch and trip." <<endl<<endl;
+
+usleep(10 * microsecond);
+
+cout<<"A sharp twig slices the bottom of your leg open." << endl<<endl;
+
+}
+
+
+
+usleep(10 * microsecond);
+
+
+
+health = health - 2;
+
+cout << "Your leg is now bleeding profusely."<< endl;
+
+cout << "What do you do?" << endl << endl;
+
+cout<< "[1] Tie shirt around leg   [2] Search for help" << endl;
+
+
+
+cin >> choice;
+
+
+
+if(choice == 2){
+
+cout<<"You decide to search for help." << endl;
+
+usleep(10 * microsecond);
+
+cout<<"You get up, but you can barely walk. You limp out of the woods and begin to call for help." << endl;
+
+health = health -2;
+
+cout<< "You hear a voice in the distance. Do you walk towards it?" << endl << endl;
+
+cout<< "[1] Yes   [2] Walk opposite the source" << endl;
+
+cin >> choice;
+
+
+
+if(choice == 1){
+
+cout<<"You walk towards the voice. You immediately realize you messed up." << endl;
+
+usleep(20 * microsecond);
+
+cout<<"You have encountered an unknown entity with a giant oval mouth taking up its entire face. It stares at you eerily." << endl;
+
+usleep(20 * microsecond);
+
+cout<<"What do you do?" <<endl << endl << "[1] Yell at it   [2] Run away" << endl << endl;
+
+cin >> choice;
+
+if(choice == 1){
+
+cout<<"The creature lets out a loud blood curdling sound and rushes towards you using its two spider-like legs." << endl;
+
+usleep(10 * microsecond);
+
+cout<<"It grabs you by the head using its claw fingers and puts your head into its mouth. The sharp teeth in its circular mouth being to spin." << endl;
+
+cout<<"\nYou let out a yell as the teeth grind your head, dissipating it into shreds." << endl;
+
+cout<< "You are dead."<<endl << endl;
+
+
+
+cout<< " / ___/__ ___ _  ___   / __ \\_  _____ ____" << endl;
+
+cout<< "/ (_ / _ `/  ' \\/ -_) / /_/ / |/ / -_) __/"<< endl;
+
+cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ "<< endl;
+
+
+
+return 0;
+
+
+
+}
+
+else if(choice == 2){
+
+cout<<"You decide to run away." << endl;
+
+usleep(10 * microsecond);
+
+cout<< "You stop running when you come across an enchanted rock with a strange aura around it. Pick it up? \n \n [1] Yes  [2] No"<<endl;
+
+cin>>choice;
+
+if(choice == 1){
+
+cout<<"You pick up the rock and it starts pouring it out more of its aura."<<endl;
+
+usleep(10 * microsecond);
+
+cout<<"The aura consumes you whole and you disappear forever."<<endl;
+
+usleep(10 * microsecond);
+
+cout<< " / ___/__ ___ _  ___   / __ \\_  _____ ____" << endl;
+
+    cout<< "/ (_ / _ `/  ' \\/ -_) / /_/ / |/ / -_) __/"<< endl;
+
+    cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ "<< endl;
+
+
+
+    return 0;
+
+
+
+
+
+}
+
+if(choice == 2){
+
+cout<<"You decide to move past the rock, though while distracted by it's shiny purple aura you accidentally step off a cliff and fall." << endl;
+
+cout<<"You hit your head on the stone cliff and it splits open before you even hit the ground." <<endl;
+
+usleep(10 * microsecond);
+
+
+
+cout<< " / ___/__ ___ _  ___   / __ \\_  _____ ____" << endl;
+
+cout<< "/ (_ / _ `/  ' \\/ -_) / /_/ / |/ / -_) __/"<< endl;
+
+cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ "<< endl;
+
+
+
+return 0;
+
+
+
+
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+else if(choice == 2) {
+
+cout<< "You decide its best to not approach mysterious voices." << endl;
+
+usleep(10 * microsecond);
+
+cout << "You move as far from the location as possible before coming across a mysterious door." << endl << endl;
+
+usleep(10 * microsecond);
+
+
+
+cout<< "Do you open it?" <<endl;
+
+cout<<"[1] Yes   [2] No" << endl <<endl;
+
+cin>>choice;
+
+if(choice ==2){
+
+cout<<"You decide to just go back to the ship."<<endl;
+
+usleep(20 * microsecond);
+
+cout<<"Wait.. you forgot where that was."<<endl <<endl;
+
+usleep(20 * microsecond);
+
+cout<<"You are lost." <<endl <<endl;
+
+
+
+cout<< " / ___/__ ___ _  ___   / __ \\_  _____ ____" << endl;
+
+cout<< "/ (_ / _ `/  ' \\/ -_) / /_/ / |/ / -_) __/"<< endl;
+
+    cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ "<< endl;
+
+
+
+}
+
+if(choice ==1){
+
+cout<<"You open the door and are hit with a glowing white light so bright you can barely keep you eyes open." <<endl;
+
+usleep(20 * microsecond);
+
+cout<<"Step in? \n\n[1]Yes  [2]No" << endl;
+
+cin>>choice;
+
+if(choice ==2){
+
+cout<<"You decide not to step in." << endl;
+
+usleep(20 * microsecond);
+
+cout<<"As you are about to walk away you think about how great it would have been to run diagnostics on your ship before leaving." <<endl;
+
+usleep(40 * microsecond);
+
+cout<<"You wouldn't have been in this mess if you did." <<endl;
+
+usleep(40 * microsecond);
+
+cout<<"You would have caught the ship's errors before leaving." <<endl;
+
+usleep(40 * microsecond);
+
+cout<<"You let out a sigh and decide to leave, but right before you do you see something peculiar." << endl;
+
+usleep(40 * microsecond);
+
+cout<<"An image starts forming in the open door." << endl;
+
+usleep(40 * microsecond);
+
+cout<<"At first you have no idea what you're looking at, but then a solid picture starts forming." <<endl;
+
+usleep(50 * microsecond);
+
+cout<<"You see people walking.. wearing some sort of uniform." << endl;
+
+usleep(40 * microsecond);
+
+cout<<"You see what looks like spaceships lined up next to each other." <<endl;
+
+usleep(40 * microsecond);
+
+cout<<"The image becomes clearer and clearer by the minute.." << endl;
+
+usleep(60 * microsecond);
+
+cout<<"Wait.. " << endl;
+
+usleep(60 * microsecond);
+
+cout<<"You recognize this place.. These people." << endl;
+
+usleep(60 * microsecond);
+
+cout<<"This is.." << endl;
+
+usleep(40 * microsecond);
+
+cout<<"No way.. " << endl << endl;
+
+usleep(50 * microsecond);
+
+cout<<"You even see your spaceship, the one that was in the crash, in perfect condition." << endl <<endl;
+
+usleep(40 * microsecond);
+
+cout<<"This is all too familiar.. This is.." << endl << endl;
+
+usleep(50 * microsecond);
+
+cout<<"This is your base." << endl;
+
+usleep(40 * microsecond);
+
+cout<<"Three days before now." << endl;
+
+usleep(50 * microsecond);
+
+cout<<"Before the crash." << endl << endl;
+
+usleep(50 * microsecond);
+
+cout<< "You walk in." << endl <<endl;
+
+usleep(60 * microsecond);
+
+cout<<"\"Mik- I mean, gladiator three! Ahem, you're late, but that's expected haha. Ship's ready for ya.\"" <<endl <<endl;
+
+usleep(40 * microsecond);
+
+cout<<"A wave of relief washes over you. You're finally back home." <<endl <<endl;
+
+
+
+        cout<<"__  __                 _       __ _      "<<endl;
+
+    cout<<"\\ \\/ /____   __  __   | |     / /(_)____ "<<endl;
+
+      cout<<" \\  // __ \\ / / / /   | | /| / // // __ \\"<<endl;
+
+        cout<<" / // /_/ // /_/ /    | |/ |/ // // / / /"<<endl;
+
+cout<<"/_/ \\____/ \\__,_/     |__/|__//_//_/ /_/" <<endl <<endl;
+
+usleep(40 * microsecond);
+
+
+
+cout<<"\"MIKE! GET YOUR BEHIND ON THAT SHIP ASAP! WE ARE SHIPPING OUT IMMEDIATELY!\"" << endl <<endl;
+
+usleep(40 * microsecond);
+
+cout<<"You stare blankly at your captain that you thought you'd never see again." <<endl << endl;
+
+usleep(40 * microsecond);
+
+cout<<"\"WHAT IS WRONG WITH YOU BOY, I SAID GET ON THAT SHIP.\"" << endl;
+
+usleep(20 * microsecond);
+
+cout<<"\"Sir.. I-\" you finally let out" <<endl;
+
+usleep(30 * microsecond);
+
+cout<<"\"Don't give me any excuses, I am tired of them Mike! Did you run diagnostics?!\"" << endl;
+
+usleep(40 * microsecond);
+
+cout<<"You try to find words, but your brain is failing you. The memory of everything that happened is fading." << endl;
+
+usleep(40 * microsecond);
+
+cout<< "You can't remember the crash, you can't remember the planet you crashed on. Actually.. how did you even get here?" << endl <<endl;
+
+usleep(40 * microsecond);
+
+cout<<"Simultaneously all at once you get a rush of memories,you see yourself dying multiple times in different ways\nYou see yourself eating on a strange planet \nYou can even see weird creatures you've never seen before." <<endl <<endl;
+
+usleep(40 * microsecond);
+
+cout<<"Then you forget it all." <<endl << endl;
+
+usleep(40 * microsecond);
+
+cout<<"\"Damn it BOY! i'll throw you onto that ship myself if I have to!\" your captain says as he grabs you then throws you onto an unchecked ship." << endl << endl;
+
+usleep(60 * microsecond);
+
+cout<<"The memory of the crash suddenly hits you again\n\"WAIT!\" you exclaim, but the doors to your ship have already closed." <<endl << endl;
+
+usleep(40 * microsecond);
+
+cout<<"As the spaceship slowly exits the main ship, you decide you're going to make a controlled landing on a nearby planet before you encounter any problems." << endl;
+
+usleep(40 * microsecond);
+
+cout<< "Though during this time you forget about the crash once more and everything feels normal again. You begin to fly to your set destination."<<endl;
+
+usleep(60 * microsecond);
+
+cout<<"Three days pass and the ship starts beeping." <<endl;
+
+usleep(40 * microsecond);
+
+cout<<"You try to diagnose the problems, but can't find anything." <<endl;
+
+usleep(40 * microsecond);
+
+cout<<"The ship starts spiraling out of control. You brace for a crash." <<endl;
+
+usleep(40 * microsecond);
+
+cout<<"KRSH!" << endl;
+
+usleep(20 * microsecond);
+
+cout<<"Everything goes black." << endl << endl;
+
+usleep(60 * microsecond);
+
+
+
+
+
+goto label;
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+if(choice==1){
+
+cout<<"You step in and find yourself floating in a white void of nothningess." <<endl;
+
+usleep(20 * microsecond);
+
+cout<<"You look back at the door and stare petrified as  you float away from it seeing the entry become smaller and smaller." <<endl;
+
+usleep(40 * microsecond);
+
+cout<<"You are stuck here." <<endl;
+
+usleep(40 * microsecond);
+
+cout<<"Forever." <<endl<<endl;
+
+usleep(30 * microsecond);
+
+cout<< " / ___/__ ___ _  ___   / __ \\_  _____ ____" << endl;
+
+cout<< "/ (_ / _ `/  ' \\/ -_) / /_/ / |/ / -_) __/"<< endl;
+
+cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ "<< endl;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+}
+
+
+
+}
+
+
+
+
+
+}
+
+
+
+else if(choice == 1){
+
+cout<< "You tie your shirt around the cut. It stops the bleeding. " << endl;
+
+usleep(10 * microsecond);
+
+cout<<"You realize you feel light headed and hungry." <<endl<<endl;
+
+usleep(10 * microsecond);
+
+cout<<"You have a food packet, but believe it can be contaminated. The only way to prepare it is on the ship's engine which may contaminate the food even more." << endl;
+
+usleep(10 * microsecond);
+
+cout<<"You can also venture out for food, but you may not find any." << endl;
+
+usleep(10 * microsecond);
+
+cout<< "[1] Prepare food packet  [2] Venture out for food."<<endl;
+
+cin>>choice;
+
+
+
+// PREAPARE FOOD PACKET START
+
+if(choice == 1){
+
+cout<< "You grab the food packet and head to the side of the ship. " <<endl;
+
+usleep(10 * microsecond);
+
+cout<<"You place it on one of the ship's engine exposed through the hull and wait for it to cook." <<endl;
+
+usleep(30 * microsecond);
+
+cout<<"The meal is ready." <<endl;
+
+usleep(10 * microsecond);
+
+cout<<"The meal smells good." <<endl;
+
+usleep(10 * microsecond);
+
+cout<<"You open it and chow down on its contents. After finishing, a wave of sleepiness washes over you" <<endl;
+
+usleep(30 * microsecond);
+
+cout<<"You lay your head down and slowly drift into a deep slumber." <<endl << endl;
+
+
+
+cout<<".\n";
+
+usleep(10 * microsecond);
+
+cout<<".\n";
+
+usleep(10 * microsecond);
+
+cout<<".\n\n";
+
+    usleep(10 * microsecond);
+
+
+
+    cout<< "You wake up a few hours later. You feel nauseaus." << endl << endl;
+
+    cout<< "[1] Drink from nearby lake   [2] Take a walk" << endl;
+
+    cin>>choice;
+
+    if(choice == 1){
+
+    cout<<"You walk to the lake." <<endl;
+
+    cout<<"You kneel down and take a sip." << endl;
+
+    usleep(10 * microsecond);
+
+
+
+    cout << "The water taste goo- the crocodile from earlier leaps out and bites your head clean off. You are dead" << endl << endl;
+
+    usleep(30 * microsecond);
+
+
+
+
+
+    cout<< " / ___/__ ___ _  ___   / __ \\_  _____ ____" << endl;
+
+        cout<< "/ (_ / _ `/  ' \\/ -_) / /_/ / |/ / -_) __/"<< endl;
+
+    cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ "<< endl;
+
+
+
+    }
+
+    else if(choice == 2){
+
+    cout<< "You go for a walk around the area." << endl<< endl;
+
+    cout<<"As you walk you feel more and more light headed. \nYou become dizzy and develop a serious headache." << endl;
+
+    cout<<"After just five minutes of walking your collapse to your knees." << endl;
+
+    usleep(10 * microsecond);
+
+
+
+    cout<< "You begin to puke non-stop to the point where you see blood." <<endl <<endl;
+
+    usleep(10 * microsecond);
+
+
+
+    cout<< "Your breathing becomes heavy as you fall to the ground and struggle to move." << endl;
+
+    usleep(10 * microsecond);
+
+
+
+    cout<<"You take your final breaths as you look at the sky above. The food has killed you." << endl << endl;
+
+
+
+    usleep(20 * microsecond);
+
+
+
+    cout<< " / ___/__ ___ _  ___   / __ \\_  _____ ____" << endl;
+
+    cout<< "/ (_ / _ `/  ' \\/ -_) / /_/ / |/ / -_) __/"<< endl;
+
+    cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ "<< endl;
+
+
+
+    }
+
+
+
+
+
+
+
+}
+
+else if(choice == 2){
+
+cout<< "You venture out for food." << endl;
+
+usleep(10 * microsecond);
+
+cout<<"You grab a piece of sharp metal scrap that fell from the ship." << endl << endl;
+
+usleep(10 * microsecond);
+
+cout<< "You slowly traverse through the woods." << endl << endl;
+
+usleep(40 * microsecond);
+
+
+
+cout<<"You see an abnormally small, four legged deer the size of a bear cub with purple eyes. "<< endl;
+
+usleep(30 * microsecond);
+
+cout<<"Dinner." << endl;
+
+cout<<"[1] Charge and attack   [2] Sneak up on it"<<endl;
+
+cin>>choice;
+
+if(choice ==2){
+
+cout<<"You decide to sneak up on the deer." << endl;
+
+usleep(20 * microsecond);
+
+cout<<"step" <<endl;
+
+usleep(20 * microsecond);
+
+cout<<"step" <<endl;
+
+usleep(30 * microsecond);
+
+cout<<"step"<<endl<<endl;
+
+usleep(10 * microsecond);
+
+cout<<"st- crack!"<<endl<<endl;
+
+usleep(10 * microsecond);
+
+cout<<"The deer immediately turns to face you and you see something horrifying." <<endl;
+
+usleep(10 * microsecond);
+
+cout<<"Before you can even think, it is charging at you." <<endl;
+
+usleep(10 * microsecond);
+
+cout<<"The giant black floating goo that came from its antler mimics the piece of metal you are holding and solidifies. " << endl;
+
+usleep(10 * microsecond);
+
+cout<<"The deer launches varies pieces of sharpened metal made from the black goo into your chest." << endl;
+
+usleep(10 * microsecond);
+
+cout<<"You fall onto your back bleeding out and the deer still rushing, impales your face with the sharp metal antlers to finish the job." <<endl <<endl;
+
+
+
+cout<< " / ___/__ ___ _  ___   / __ \\_  _____ ____" << endl;
+
+cout<< "/ (_ / _ `/  ' \\/ -_) / /_/ / |/ / -_) __/"<< endl;
+
+cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ "<< endl;
+
+
+
+}
+
+if(choice ==1){
+
+cout<<"You yell as you run up to the deer." << endl;
+
+usleep(10 * microsecond);
+
+cout<<"It has no time to react and turns around right as you plunge the metal into its neck." << endl;
+
+usleep(10 * microsecond);
+
+cout<<"A fountain of purple blood flows from its neck and covers the ground and your hands." << endl;
+
+usleep(10 * microsecond);
+
+cout<<"You take the deer back to the ship." <<endl;
+
+cout<<"[1] Cook it on engine  [2] Make fire to cook it"<<endl;
+
+cin>>choice;
+
+
+
+if(choice == 2){
+
+cout<<"You decide to make a fire to cook the deer." <<endl<<endl;
+
+usleep(10 * microsecond);
+
+cout<<"You start the fire successfully and begin cooking, but upon looking down you've realized the mistake you made."<<endl;
+
+usleep(30 * microsecond);
+
+cout<<"A gasoline trail leading back to the ship that has now caught fire."<<endl <<endl;
+
+usleep(20 * microsecond);
+
+cout<<"KABOOM!" << endl << endl;
+
+
+
+cout<< " / ___/__ ___ _  ___   / __ \\_  _____ ____" << endl;
+
+cout<< "/ (_ / _ `/  ' \\/ -_) / /_/ / |/ / -_) __/"<< endl;
+
+cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ "<< endl;
+
+
+
+}
+
+
+
+if(choice == 1) {
+
+cout<<"You skin and cook the deer on the engine." << endl;
+
+usleep(40 * microsecond);
+
+cout<<"The deer is ready." << endl <<endl;
+
+usleep(10 * microsecond);
+
+cout<<"You begin to eat and feel rejuvenated." << endl << endl;
+
+usleep(20 * microsecond);
+
+cout<<"You feel a little thirsty." <<endl;
+
+usleep(30 * microsecond);
+
+
+
+cout<<"You look to your right and see container full of the drained deer's blood." << endl;
+
+usleep(30 * microsecond);
+
+
+
+cout<< "Ngl.. that deer blood lookin like some bomb ass grape juice rn \U0001F633 \U0001F633 \U0001F633" <<endl;
+
+usleep(30 * microsecond);
+
+cout<<"... What you finna do?" <<endl;
+
+cout<<"[1] Sip dat deer blood   [2]Look for water" << endl;
+
+cin>>choice;
+
+if(choice == 1){
+
+cout<<"You grab dat deer blood and drink it." << endl;
+
+usleep(30 * microsecond);
+
+cout<<"You feel great." << endl;
+
+usleep(20 * microsecond);
+
+cout<<"You feel alive." <<endl;
+
+usleep(20 * microsecond);
+
+cout<<"Better than ever!"<<endl;
+
+usleep(10 * microsecond);
+
+cout<<"WONDERFUL!"<<endl;
+
+usleep(5 * microsecond);
+
+cout<<"SPECTACULAR!"<<endl;
+
+usleep(5 * microsecond);
+
+cout<<"ABSOUTLEY DIVINE" << endl << endl;
+
+usleep(5 * microsecond);
+
+cout<<"EXTRAORDINARILY SPECTACULARLY SHIMMERINGLY ASTONISHING!! " << endl;
+
+usleep(10 * microsecond);
+
+cout<<"NOW GO.." << endl;
+
+usleep(20 * microsecond);
+
+cout<<"Go.. " <<endl;
+
+usleep(20 * microsecond);
+
+cout<<"Spread your wings like the celestial you now are and take flight." <<endl;
+
+usleep(20 * microsecond);
+
+cout<<"take flight and fly away.. " << endl;
+
+usleep(20 * microsecond);
+
+cout<<"and let all know.. "<<endl;
+
+  usleep(30 * microsecond);
+
+cout<<"let all know.. " << endl << endl;
+
+usleep(30 * microsecond);
+
+cout<<"That you.. " <<endl;
+
+usleep(30 * microsecond);
+
+cout<< "survived."<< endl <<endl;
+
+usleep(30 * microsecond);
+
+cout<<"Your feet depart the ground using your newfound powers.. and you fly away back to your home planet."<<endl;
+
+
+
+
+
+cout<<"__  __                 _       __ _      "<<endl;
+
+cout<<"\\ \\/ /____   __  __   | |     / /(_)____ "<<endl;
+
+cout<<" \\  // __ \\ / / / /   | | /| / // // __ \\"<<endl;
+
+cout<<" / // /_/ // /_/ /    | |/ |/ // // / / /"<<endl;
+
+cout<<"/_/ \\____/ \\__,_/     |__/|__//_//_/ /_/" <<endl;
+
+
+
+}
+
+else if (choice == 2){
+
+cout<<"Have you not learned your lesson about looking for water at this point?" << endl;
+
+usleep(10 * microsecond);
+
+cout<< "I ain't even gonna bring the crocodile into it this time. You're dead." << endl << endl;
+
+usleep(10 * microsecond);
+
+cout<< " / ___/__ ___ _  ___   / __ \\_  _____ ____" << endl;
+
+    cout<< "/ (_ / _ `/  ' \\/ -_) / /_/ / |/ / -_) __/"<< endl;
+
+    cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ "<< endl;
+
+
+
+}
+
+}
+
+}
+
+
+
+}
+
+
+
+
+
+}
+
+
+
+return 0;
+
+}
+
