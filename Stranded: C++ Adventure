@@ -554,7 +554,7 @@ cout<<"You step in and find yourself floating in a white void of nothningess." <
 
 usleep(40 * microsecond);
 
-cout<<"You look back at the door and stare petrified as you float away from it seeing the world you were once in become smaller and smaller." <<endl;
+cout<<"You look back at the door and stare petrified as you float away from it, seeing the world you were once in become smaller and smaller." <<endl;
 
 usleep(60 * microsecond);
 
@@ -571,12 +571,6 @@ cout<< " / ___/__ ___ _  ___   / __ \\_  _____ ____" << endl;
 cout<< "/ (_ / _ `/  ' \\/ -_) / /_/ / |/ / -_) __/"<< endl;
 
 cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ "<< endl;
-
-
-usleep(200 * microsecond);
-
-
-cout<<"\n(Re-run the code)" <<endl;
 
 
 
@@ -848,7 +842,7 @@ cout<<"A fountain of purple blood flows from its neck and covers the ground and 
 
 usleep(10 * microsecond);
 
-cout<<"You take the deer back to the ship." <<endl;
+cout<<"You decide to collect some of its mystical blood, then take the deer back to the ship." <<endl;
 
 cout<<"[1] Cook it on engine  [2] Make fire to cook it"<<endl;
 
@@ -1011,13 +1005,25 @@ cout<<"/_/ \\____/ \\__,_/     |__/|__//_//_/ /_/ \n\n Secret Ending Unlocked" <
 
 else if (choice == 2){
 
-cout<<"Have you not learned your lesson about looking for water at this point?" << endl;
+cout<<"You venture out to a nearby lake, and once there you lean over it to drink." << endl;
+
+usleep(20 * microsecond);
+
+cout<< "Though as you drink, you realize something strange.." << endl << endl;
+
+usleep(20 * microsecond);
+
+cout<< "You can't see your reflection in the water. Wait.. Is this even water?" << endl << endl;
+
+usleep(30 * microsecond);
+
+cout<< "What did you just dri.. " << endl << endl;
 
 usleep(10 * microsecond);
 
-cout<< "I ain't even gonna bring the crocodile into it this time. You're dead." << endl << endl;
+cout<< "You pass out and fall headfirst into the lake of the deceiving mysterious liquid, slowly sinking to the dark bottom." << endl << endl;
 
-usleep(10 * microsecond);
+usleep(20 * microsecond);
 
 cout<< " / ___/__ ___ _  ___   / __ \\_  _____ ____" << endl;
 
