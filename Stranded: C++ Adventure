@@ -170,7 +170,7 @@ cout<<"You get up, but you can barely walk. You limp out of the woods and begin 
 
 health = health -2;
 
-cout<< "You hear a voice in the distance. Do you walk towards it?" << endl << endl;
+cout<< "You hear a voice say \"Mike\" in the distance. Do you walk towards it?" << endl << endl;
 
 cout<< "[1] Yes   [2] Walk opposite the source" << endl;
 
@@ -227,7 +227,7 @@ cout<<"You decide to run away." << endl;
 
 usleep(10 * microsecond);
 
-cout<< "You stop running when you come across an enchanted rock with a strange aura around it. Pick it up? \n \n [1] Yes  [2] No"<<endl;
+cout<< "You stumble left and right, leg still bleeding, before finally making it a distance away. You stop running and catch your breath when you come across an enchanted rock with a strange aura around it. Pick it up? \n \n [1] Yes  [2] No"<<endl;
 
 cin>>choice;
 
@@ -301,11 +301,11 @@ cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ \n"<< endl;
 
 else if(choice == 2) {
 
-cout<< "You decide its best to not approach mysterious voices." << endl;
+cout<< "You decide its best to not approach the mysterious voice that somehow knows your name." << endl;
 
 usleep(10 * microsecond);
 
-cout << "You move as far from the location as possible before coming across a mysterious door." << endl << endl;
+cout << "You move as far from the location as possible, limping on your injured leg, before coming across a mysterious door." << endl << endl;
 
 usleep(10 * microsecond);
 
@@ -327,7 +327,7 @@ cout<<"Wait.. you forgot where that was."<<endl <<endl;
 
 usleep(20 * microsecond);
 
-cout<<"You are lost." <<endl <<endl;
+cout<<"You are injured. You have no supplies. You are lost." <<endl <<endl;
 
 
 
@@ -432,11 +432,11 @@ usleep(50 * microsecond);
 
 cout<< "You walk in." << endl <<endl;
 
-usleep(60 * microsecond);
+usleep(70 * microsecond);
 
 cout<<"\"Mik- I mean, gladiator three! Ahem, you're late, but that's expected haha. Ship's ready for ya.\"" <<endl <<endl;
 
-usleep(40 * microsecond);
+usleep(60 * microsecond);
 
 cout<<"A wave of relief washes over you. You're finally back home." <<endl <<endl;
 
@@ -452,41 +452,41 @@ cout<<"A wave of relief washes over you. You're finally back home." <<endl <<end
 
 cout<<"/_/ \\____/ \\__,_/     |__/|__//_//_/ /_/" <<endl <<endl;
 
-usleep(40 * microsecond);
+usleep(60 * microsecond);
 
 
 
 cout<<"\"MIKE! GET YOUR BEHIND ON THAT SHIP ASAP! WE ARE SHIPPING OUT IMMEDIATELY!\"" << endl <<endl;
 
-usleep(40 * microsecond);
+usleep(60 * microsecond);
 
 cout<<"You stare blankly at your captain that you thought you'd never see again." <<endl << endl;
 
-usleep(40 * microsecond);
+usleep(70 * microsecond);
 
 cout<<"\"WHAT IS WRONG WITH YOU BOY, I SAID GET ON THAT SHIP.\"" << endl;
 
-usleep(20 * microsecond);
+usleep(40 * microsecond);
 
 cout<<"\"Sir.. I-\" you finally let out" <<endl;
 
-usleep(30 * microsecond);
+usleep(40 * microsecond);
 
 cout<<"\"Don't give me any excuses, I am tired of them Mike! Did you run diagnostics?!\"" << endl;
 
-usleep(40 * microsecond);
+usleep(60 * microsecond);
 
 cout<<"You try to find words, but your brain is failing you. The memory of everything that happened is fading." << endl;
 
-usleep(40 * microsecond);
+usleep(60 * microsecond);
 
 cout<< "You can't remember the crash, you can't remember the planet you crashed on. Actually.. how did you even get here?" << endl <<endl;
 
-usleep(40 * microsecond);
+usleep(70 * microsecond);
 
 cout<<"Simultaneously all at once you get a rush of memories,you see yourself dying multiple times in different ways\nYou see yourself eating on a strange planet \nYou can even see weird creatures you've never seen before." <<endl <<endl;
 
-usleep(40 * microsecond);
+usleep(70 * microsecond);
 
 cout<<"Then you forget it all." <<endl << endl;
 
@@ -494,31 +494,31 @@ usleep(40 * microsecond);
 
 cout<<"\"Damn it BOY! i'll throw you onto that ship myself if I have to!\" your captain says as he grabs you then throws you onto an unchecked ship." << endl << endl;
 
-usleep(60 * microsecond);
+usleep(70 * microsecond);
 
 cout<<"The memory of the crash suddenly hits you again\n\"WAIT!\" you exclaim, but the doors to your ship have already closed." <<endl << endl;
 
-usleep(40 * microsecond);
+usleep(60 * microsecond);
 
 cout<<"As the spaceship slowly exits the main ship, you decide you're going to make a controlled landing on a nearby planet before you encounter any problems." << endl;
 
-usleep(40 * microsecond);
+usleep(60 * microsecond);
 
 cout<< "Though during this time you forget about the crash once more and everything feels normal again. You begin to fly to your set destination."<<endl;
 
+usleep(70 * microsecond);
+
+cout<<"Three days pass and you don't encounter a single problem. On that third day however, the ship starts beeping.." <<endl;
+
 usleep(60 * microsecond);
 
-cout<<"Three days pass and the ship starts beeping." <<endl;
+cout<<"You frantically try to diagnose the problems, but can't find anything wrong." <<endl;
 
-usleep(40 * microsecond);
-
-cout<<"You try to diagnose the problems, but can't find anything." <<endl;
-
-usleep(40 * microsecond);
+usleep(60 * microsecond);
 
 cout<<"The ship starts spiraling out of control. You brace for a crash." <<endl;
 
-usleep(40 * microsecond);
+usleep(60 * microsecond);
 
 cout<<"KRSH!" << endl;
 
@@ -526,7 +526,7 @@ usleep(20 * microsecond);
 
 cout<<"Everything goes black." << endl << endl;
 
-usleep(60 * microsecond);
+usleep(70 * microsecond);
 
 
 
@@ -552,15 +552,15 @@ if(choice==1){
 
 cout<<"You step in and find yourself floating in a white void of nothningess." <<endl;
 
-usleep(20 * microsecond);
-
-cout<<"You look back at the door and stare petrified as  you float away from it seeing the entry become smaller and smaller." <<endl;
-
 usleep(40 * microsecond);
 
-cout<<"You are stuck here." <<endl;
+cout<<"You look back at the door and stare petrified as you float away from it seeing the world you were once in become smaller and smaller." <<endl;
 
-usleep(40 * microsecond);
+usleep(60 * microsecond);
+
+cout<<"You are stuck floating here." <<endl;
+
+usleep(60 * microsecond);
 
 cout<<"Forever." <<endl<<endl;
 
@@ -572,6 +572,11 @@ cout<< "/ (_ / _ `/  ' \\/ -_) / /_/ / |/ / -_) __/"<< endl;
 
 cout<< "\\___/\\_,_/_/_/_/\\__/  \\____/|___/\\__/_/ "<< endl;
 
+
+usleep(200 * microsecond);
+
+
+cout<<"\n(Re-run the code)" <<endl;
 
 
 
